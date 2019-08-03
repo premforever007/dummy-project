@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+	<head>
+		<title>javascript Example</title>
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+		<script type="text/javascript" src="bootstrap/js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript">
+			function sum(){
+				alert("hello");
+				var a,d1,d2;
+				a=parseInt(document.getElementById("n1").value);
+					for( ;a!=0;)
+					{	d1=a%10;
+						a=parseInt(a/10);
+						document.write("digit are- "+ d1 +"</br>");
+					}
+			}
+		</script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	</head>	
+	<body>
+		<div class="container-fluid">
+			<h1>any digit seperation of any numbers</h1>
+			<form>
+			<div class="form-group">	
+				
+				<div class="row">
+					<div class="col-md-6">
+						<label>Enter any digit no :</label> 
+						<input type="text" class="form-control" id="n1">
+					</div>
+				</div>
+				
+				</div>
+			
+			<div class="row">
+				<input type="button" value="sum" onclick="sum()">
+			</div>
+			</form>
+		</div>
+	</body>
+</html>
